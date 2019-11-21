@@ -1,2 +1,2 @@
 # Risk-Manager
-Dette er vores use cases til risk manager
+Dette er vores modeller og beskrivelser til Risk Manager.
