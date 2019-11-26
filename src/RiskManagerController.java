@@ -7,6 +7,7 @@ public class RiskManagerController {
     }
 
     public void specifyRisk(Risk risk, String description, double probability, double consequence){
+        rt.specifyRisk(risk, description, probability, consequence); // Kan ses i sekvensdiagrammet
 
     }
 }

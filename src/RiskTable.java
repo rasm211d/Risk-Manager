@@ -8,6 +8,8 @@ public class RiskTable {
     }
 
     public void specifyRisk(Risk risk, String description, double probability, double consequence){
-
+        if (risk == null)
+            return;
+        risk.specifyRisk(description, probability, consequence);
     }
 }
