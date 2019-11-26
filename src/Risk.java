@@ -12,9 +12,15 @@ public class Risk {
             // throw exception
             throw new InvalidConsequenceValueException();
 
+
+        this.description = description;
+        this.probability = probability;
+        this.consequence = consequence;
+
+        calculateExposure();
     }
 
     private void calculateExposure() {
-
+        exposure = probability * consequence;
     }
 }
