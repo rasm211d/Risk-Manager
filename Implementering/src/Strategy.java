@@ -11,10 +11,5 @@ public class Strategy {
         this.responsibility = responsibility;
 
     }
-
-    public void attachStrategy(Strategy strategy, Risk risk) {
-
-
-    }
 }
 
