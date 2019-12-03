@@ -3,7 +3,9 @@ import java.util.ArrayList;
 public class StrategyTable {
     private ArrayList<Strategy> strategies = new ArrayList<>();
 
-    public Strategy addStrategy() {return null;}
+    public void addStrategy(Strategy strategy) {
+        strategies.add(strategy);
+    }
 
     public Strategy showStrategy() {return null;}
 

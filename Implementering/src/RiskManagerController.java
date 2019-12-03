@@ -1,6 +1,7 @@
 public class RiskManagerController extends Risk{
 
     RiskTable rt = new RiskTable();
+    StrategyTable st = new StrategyTable();
 
     public void addRisk(){
         Risk newRisk = new Risk();
@@ -15,6 +16,13 @@ public class RiskManagerController extends Risk{
     public void showRisk() {
         Risk riskId = new Risk();
         rt.showRisk(riskId);
+    }
+    public  void addStrategy() {
+        Strategy newStrategy = new Strategy();
+        st.addStrategy(newStrategy);
+    }
+    public void specifyStrategy() {
+
     }
 
 
