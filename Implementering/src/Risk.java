@@ -7,7 +7,7 @@ public class Risk {
     private double exposure = 0.0;
     private ArrayList<Strategy> strategies = new ArrayList<>();
 
-    /*public void specifyRisk(String description, double probability, double consequence) {
+    public void specifyRisk(String description, double probability, double consequence) {
         if (probability < 0.0 || probability > 1.0)
             // throw exception
             throw new InvalidProbabilityValueException();
@@ -20,7 +20,7 @@ public class Risk {
         this.consequence = consequence;
 
         calculateExposure();
-    }*/
+    }
 
     private void calculateExposure() {
         exposure = probability * consequence;
