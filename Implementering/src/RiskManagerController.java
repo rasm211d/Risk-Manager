@@ -1,4 +1,4 @@
-public class RiskManagerController extends Risk{
+public class RiskManagerController{
 
     RiskTable rt = new RiskTable();
     StrategyTable st = new StrategyTable();

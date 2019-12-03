@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="Tilføjet strategies field til Risk klassen">
+    <list default="true" id="6103908c-ad23-4676-8efd-3635e9a9ee17" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Risk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/RiskManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/RiskManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/RiskTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/RiskTable.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,17 +22,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1USqGfdH7Nz7vPmkdPSYpQZMlfh" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
@@ -57,30 +57,8 @@
       <updated>1575360249506</updated>
       <workItem from="1575360250783" duration="54000" />
       <workItem from="1575360750419" duration="92000" />
-      <workItem from="1575360844216" duration="2241000" />
+      <workItem from="1575360844216" duration="1231000" />
     </task>
-    <task id="LOCAL-00001" summary="Strategy added">
-      <created>1575362102647</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1575362102647</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fjernet attachStrategy fra Strategy klassen">
-      <created>1575363054030</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1575363054030</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Tilføjet strategies field til Risk klassen">
-      <created>1575363206447</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1575363206447</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,11 +76,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Strategy added" />
-    <MESSAGE value="Fjernet attachStrategy fra Strategy klassen" />
-    <MESSAGE value="Tilføjet strategies field til Risk klassen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet strategies field til Risk klassen" />
   </component>
 </project>

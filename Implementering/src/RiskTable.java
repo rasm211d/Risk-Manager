@@ -13,7 +13,7 @@ public class RiskTable {
         risk.specifyRisk(description, probability, consequence);
     }
 
-    public void showRisk(Risk id) {
-        //risks.get(id);
+    public void showRisk(Risk riskId) {
+        //risks.get(riskId);
     }
 }
