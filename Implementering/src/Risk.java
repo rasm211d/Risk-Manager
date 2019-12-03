@@ -22,4 +22,6 @@ public class Risk {
     private void calculateExposure() {
         exposure = probability * consequence;
     }
+
+
 }
