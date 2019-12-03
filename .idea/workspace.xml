@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6103908c-ad23-4676-8efd-3635e9a9ee17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="sortByResponsibility method added in StrategyTable">
+      <change afterPath="$PROJECT_DIR$/Implementering/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/RiskManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/RiskManagerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/RiskTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/RiskTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenebuilder.fxml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,16 +22,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1USqGfdH7Nz7vPmkdPSYpQZMlfh" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15039062" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,8 +51,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Risk_Manager" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\benky\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,8 +77,53 @@
       <updated>1575360249506</updated>
       <workItem from="1575360250783" duration="54000" />
       <workItem from="1575360750419" duration="92000" />
-      <workItem from="1575360844216" duration="1231000" />
+      <workItem from="1575360844216" duration="2241000" />
+      <workItem from="1575364416089" duration="2001000" />
+      <workItem from="1575367012955" duration="483000" />
     </task>
+    <task id="LOCAL-00001" summary="Strategy added">
+      <created>1575362102647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575362102647</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fjernet attachStrategy fra Strategy klassen">
+      <created>1575363054030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575363054030</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tilføjet strategies field til Risk klassen">
+      <created>1575363206447</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575363206447</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Nyt klassediagram">
+      <created>1575363483208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575363483208</updated>
+    </task>
+    <task id="LOCAL-00005" summary="scenebuilder fil">
+      <created>1575367067216</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575367067216</updated>
+    </task>
+    <task id="LOCAL-00006" summary="scenebuilder">
+      <created>1575367087142</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575367087142</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,5 +141,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Strategy added" />
+    <MESSAGE value="Fjernet attachStrategy fra Strategy klassen" />
+    <MESSAGE value="Tilføjet strategies field til Risk klassen" />
+    <MESSAGE value="Nyt klassediagram" />
+    <MESSAGE value="scenebuilder fil" />
+    <MESSAGE value="scenebuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="scenebuilder" />
   </component>
 </project>
