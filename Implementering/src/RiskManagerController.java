@@ -18,4 +18,5 @@ public class RiskManagerController extends Risk{
         rt.showRisk(riskId);
     }
 
+
 }
