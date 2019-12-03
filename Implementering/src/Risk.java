@@ -25,4 +25,8 @@ public class Risk {
     private void calculateExposure() {
         exposure = probability * consequence;
     }
+
+    public void attachStrategy(Strategy strategy) {
+        strategies.add(strategy);
+    }
 }
