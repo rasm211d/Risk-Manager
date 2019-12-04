@@ -1,3 +1,5 @@
+package Logic;
+
 public class Strategy {
 
     private String description = "";
