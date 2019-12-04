@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/start.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -174,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575463359377</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Sceneskifte fra startskærm til strategytable tilføjet">
+      <created>1575466476391</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575466476391</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +210,21 @@
     <MESSAGE value="Fixed javafx" />
     <MESSAGE value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
     <MESSAGE value="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml" />
+    <MESSAGE value="Sceneskifte fra startskærm til strategytable tilføjet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sceneskifte fra startskærm til strategytable tilføjet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Implementering/src/Logic/Main.java</url>
+          <line>29</line>
+          <properties class="Logic.Main" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -32,7 +32,7 @@ public class Main extends Application {
     }
 
     /** Method for changing scenes*/
-    public void changeScreenButtonPushed(javafx.event.ActionEvent actionEvent) throws Exception {
+    public void changeSceneToStrategyTable(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent strategytable = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
         Scene strategytableScene = new Scene(strategytable);

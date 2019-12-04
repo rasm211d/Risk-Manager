@@ -68,7 +68,7 @@
                         <Font size="64.0" />
                      </font>
                   </Button>
-                  <Button fx:id="strategybutton" layoutX="144.0" layoutY="203.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" text="Strategier">
+                  <Button fx:id="strategybutton" layoutX="144.0" layoutY="203.0" mnemonicParsing="false" onAction="#changeSceneToStrategyTable" text="Strategier">
                      <font>
                         <Font size="64.0" />
                      </font>
