@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/strategytable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575462710756</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml">
+      <created>1575463359377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575463359377</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +204,7 @@
     <MESSAGE value="Tilføjede SQLite external library" />
     <MESSAGE value="Fixed javafx" />
     <MESSAGE value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
+    <MESSAGE value="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml" />
   </component>
 </project>
