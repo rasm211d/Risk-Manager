@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/Connect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/TestCreateTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/TestWriteData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/TestWriteData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/TestWriteData.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +61,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestCreateTable">
+  <component name="RunManager" selected="Application.TestWriteData">
     <configuration name="RiskManagerController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Logic.Main" />
       <module name="Risk_Manager" />
@@ -85,12 +82,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestWriteData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DBAccess.TestWriteData" />
+      <module name="Risk_Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DBAccess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.RiskManagerController" />
       <item itemvalue="Application.TestCreateTable" />
+      <item itemvalue="Application.TestWriteData" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestWriteData" />
         <item itemvalue="Application.TestCreateTable" />
         <item itemvalue="Application.RiskManagerController" />
       </list>
@@ -185,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575462710756</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tilføj Connect klassen og start på sqlite tests">
+      <created>1575464955714</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575464955714</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +234,7 @@
     <MESSAGE value="Tilføjede SQLite external library" />
     <MESSAGE value="Fixed javafx" />
     <MESSAGE value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
-    <option name="LAST_COMMIT_MESSAGE" value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
+    <MESSAGE value="Tilføj Connect klassen og start på sqlite tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføj Connect klassen og start på sqlite tests" />
   </component>
 </project>
