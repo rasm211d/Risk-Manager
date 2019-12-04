@@ -20,12 +20,7 @@ public class Main extends Application {
         primaryStage.setTitle("Risk Manager");
         primaryStage.setScene(new Scene(root, 640, 400));
         primaryStage.show();
-
-//        Button strategybutton = new Button();
-//        strategybutton.setOnAction(value ->{});
     }
-
-
 
     public static void main(String[] args) {
         launch(args);
@@ -34,13 +29,26 @@ public class Main extends Application {
     /** Method for changing scenes*/
     public void changeSceneToStrategyTable(javafx.event.ActionEvent actionEvent) throws Exception {
 
-        Parent strategytable = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
-        Scene strategytableScene = new Scene(strategytable);
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
+        Scene strategytableScene = new Scene(root);
 
         // This is the line that gets the stage information
-        Stage window = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
 
-        window.setScene(strategytableScene);
-        window.show();
+        primaryStage.setScene(strategytableScene);
+        primaryStage.show();
+    }
+
+    /** Method for changing scenes*/
+    public void changeSceneToStart(javafx.event.ActionEvent actionEvent) throws Exception {
+
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/start.fxml"));
+        Scene startScene = new Scene(root);
+
+        // This is the line that gets the stage information
+        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+
+        primaryStage.setScene(startScene);
+        primaryStage.show();
     }
 }
