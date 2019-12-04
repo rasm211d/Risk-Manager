@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="" />
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/Connect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/TestCreateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/TestWriteData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/data.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestCreateTable">
     <configuration name="RiskManagerController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Logic.Main" />
       <module name="Risk_Manager" />
@@ -66,8 +72,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCreateTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DBAccess.TestCreateTable" />
+      <module name="Risk_Manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DBAccess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RiskManagerController" />
+      <item itemvalue="Application.TestCreateTable" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCreateTable" />
         <item itemvalue="Application.RiskManagerController" />
       </list>
     </recent_temporary>
