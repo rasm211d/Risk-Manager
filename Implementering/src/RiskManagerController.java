@@ -4,7 +4,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class RiskManagerController extends Application{
+public class RiskManagerController{
 
     RiskTable rt = new RiskTable();
     StrategyTable st = new StrategyTable();
@@ -29,18 +29,4 @@ public class RiskManagerController extends Application{
     public void specifyStrategy() {
 
     }
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Risk Manager");
-        primaryStage.setScene(new Scene(root, 640, 400));
-        primaryStage.show();
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-
 }
