@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="" />
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/strategytable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +44,10 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\emiln\IdeaProjects\Risk-Manager\lib" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\emiln\IdeaProjects\Risk-Manager\lib" />
     </key>
   </component>
