@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Implementering/src/GUI/addStrategy.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -216,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575534551090</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Ændrede DBRisk insert metoden til at bruge setDouble istedet for setFloat">
+      <created>1575536264647</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1575536264647</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +257,7 @@
     <MESSAGE value="Sceneskifte fra startskærm til strategytable tilføjet" />
     <MESSAGE value="Sceneskift fra strategytable til startskærm tilføjet" />
     <MESSAGE value="Main flyttet til GUI package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main flyttet til GUI package" />
+    <MESSAGE value="Ændrede DBRisk insert metoden til at bruge setDouble istedet for setFloat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ændrede DBRisk insert metoden til at bruge setDouble istedet for setFloat" />
   </component>
 </project>
