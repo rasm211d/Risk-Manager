@@ -1,4 +1,4 @@
-package Logic;
+package GUI;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 import java.awt.event.ActionEvent;
 
 public class Main extends Application {
+
+    private Scene strategytableScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -30,7 +32,9 @@ public class Main extends Application {
     public void changeSceneToStrategyTable(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
-        Scene strategytableScene = new Scene(root);
+
+        if (strategytableScene == null)
+            strategytableScene = new Scene(root);
 
         // This is the line that gets the stage information
         Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
