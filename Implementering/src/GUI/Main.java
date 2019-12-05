@@ -14,6 +14,7 @@ public class Main extends Application {
 
     private Scene startScene;
     private Scene strategyTableScene;
+    private Scene riskTableScene;
     Stage stage = new Stage();
 
     @Override
@@ -60,6 +61,22 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /** Method for changing scenes*/
+    public void changeSceneToRiskTable(javafx.event.ActionEvent actionEvent) throws Exception {
+
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/risktable.fxml"));
+
+        // Only creates a new scene if it doesn't already exist
+        if (riskTableScene == null)
+            riskTableScene = new Scene(root);
+
+        // This is the line that gets the stage information
+        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+
+        primaryStage.setScene(riskTableScene);
+        primaryStage.show();
+    }
+
     /** Method for popup window to add strategy*/
     public void popupAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
@@ -72,6 +89,7 @@ public class Main extends Application {
 
     /** Method for closing popup window */
     public void exitPopup(javafx.event.ActionEvent actionEvent) throws Exception {
+        System.out.println("closing popup");
         stage.close();
     }
 }
