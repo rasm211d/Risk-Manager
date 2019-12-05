@@ -50,4 +50,20 @@ public class DBRisk {
         }
     }
 
+    public static void delete(Risk risk) {
+
+        String sql = "DELETE FROM risk WHERE id = ?";
+
+        try (Connection conn = Connect.connect();
+            PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, risk.getId());
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
 }
