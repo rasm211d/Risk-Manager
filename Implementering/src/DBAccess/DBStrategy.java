@@ -4,9 +4,36 @@ import Logic.Strategy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBStrategy {
+
+    public static Strategy getById(int id) {
+        Strategy strategy = null;
+
+        String sql = "SELECT * FROM strategy WHERE id = ?";
+
+        try (Connection conn = Connect.connect();
+        PreparedStatement ps = conn.prepareStatement(sql)){
+            ps.setInt(1, id);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                strategy = new Strategy(
+                        rs.getInt("id"),
+                        rs.getString("description"),
+                        rs.getDouble("cost"),
+                        rs.getString("responsibility")
+                );
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return strategy;
+    }
 
     public static void insert (Strategy strategy) {
 
