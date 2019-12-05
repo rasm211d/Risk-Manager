@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +123,7 @@
       <workItem from="1575369519807" duration="25000" />
       <workItem from="1575459462402" duration="906000" />
       <workItem from="1575461269544" duration="1446000" />
+      <workItem from="1575467689922" duration="79000" />
     </task>
     <task id="LOCAL-00001" summary="Strategy added">
       <created>1575362102647</created>
@@ -211,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575465887655</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Påbegyndt DBRisk klassen">
+      <created>1575467716520</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575467716520</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +248,7 @@
     <MESSAGE value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
     <MESSAGE value="Tilføj Connect klassen og start på sqlite tests" />
     <MESSAGE value="Test med at skrive data til databasen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test med at skrive data til databasen." />
+    <MESSAGE value="Påbegyndt DBRisk klassen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Påbegyndt DBRisk klassen" />
   </component>
 </project>
