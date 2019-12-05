@@ -45,4 +45,18 @@ public class DBStrategy {
             System.out.println(e.getMessage());
         }
     }
+
+    public static void delete(Strategy strategy) {
+        String sql = "DELETE FROM strategy WHERE id = ?";
+
+        try (Connection conn = Connect.connect();
+            PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setInt(1, strategy.getId());
+            ps.executeUpdate();
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
