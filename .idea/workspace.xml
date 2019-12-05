@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a21d967-946a-4727-94c4-ef1ae5887fca" name="Default Changelist" comment="Saveknap">
-      <change beforePath="$PROJECT_DIR$/.idea/Risk-Manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Risk-Manager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="Popup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/Connect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/TestCreateTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/TestWriteData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/InvalidConsequenceValueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/InvalidProbabilityValueException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/strategytable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/strategytable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Risk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Risk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/RiskManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +70,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="GUI.Main" />
-      <module name="Risk-Manager" />
+      <module name="Risk_Manager" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../" />
       <method v="2">
         <option name="Make" enabled="true" />
