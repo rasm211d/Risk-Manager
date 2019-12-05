@@ -9,12 +9,17 @@ public class Risk {
     private double consequence = 0.0;
     private Strategy attachedStrategy;
 
-    public Risk(int id, String description, double probability, double consequence, double exposure, Strategy attachedStrategy) {
+    public Risk(String description, double probability, double consequence) {
+        this.description = description;
+        this.probability = probability;
+        this.consequence = consequence;
+    }
+
+    public Risk(int id, String description, double probability, double consequence) {
         this.id = id;
         this.description = description;
         this.probability = probability;
         this.consequence = consequence;
-        this.attachedStrategy = attachedStrategy;
     }
 
     public void specifyRisk(String description, double probability, double consequence) {
