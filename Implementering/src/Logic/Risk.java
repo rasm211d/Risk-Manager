@@ -44,19 +44,39 @@ public class Risk {
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public double getProbability() {
         return probability;
+    }
+
+    public void setProbability(double probability) {
+        this.probability = probability;
     }
 
     public double getConsequence() {
         return consequence;
     }
 
+    public void setConsequence(double consequence) {
+        this.consequence = consequence;
+    }
+
     public double getExposure() {
         return exposure = consequence * probability;
     }
 
+    public void setExposure(double exposure) {
+        this.exposure = exposure;
+    }
 
+    public Strategy getAttachedStrategy () {
+        return attachedStrategy;
+    }
 
-
+    public void setAttachedStrategy(Strategy attachedStrategy) {
+        this.attachedStrategy = attachedStrategy;
+    }
 }

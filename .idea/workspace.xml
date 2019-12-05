@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="tilføjet id datafield i Risk klassen og lavet getter til den">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Strategy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575534551090</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="getExposure metoden i Risk klassen er lavet om så den udregner exposure ved at gange consequence og probability med hinanden">
+      <created>1575536577475</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1575536577475</updated>
+    </task>
+    <task id="LOCAL-00019" summary="tilføjet id datafield i Risk klassen og lavet getter til den">
+      <created>1575536748082</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575536748082</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +262,8 @@
     <MESSAGE value="Sceneskifte fra startskærm til strategytable tilføjet" />
     <MESSAGE value="Sceneskift fra strategytable til startskærm tilføjet" />
     <MESSAGE value="Main flyttet til GUI package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main flyttet til GUI package" />
+    <MESSAGE value="getExposure metoden i Risk klassen er lavet om så den udregner exposure ved at gange consequence og probability med hinanden" />
+    <MESSAGE value="tilføjet id datafield i Risk klassen og lavet getter til den" />
+    <option name="LAST_COMMIT_MESSAGE" value="tilføjet id datafield i Risk klassen og lavet getter til den" />
   </component>
 </project>
