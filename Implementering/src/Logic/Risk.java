@@ -7,7 +7,7 @@ public class Risk {
     private double probability = 0.0;
     private double consequence = 0.0;
     private double exposure = 0.0;
-    private ArrayList<Strategy> strategies = new ArrayList<>();
+    private Strategy attachedStrategy;
 
     public void specifyRisk(String description, double probability, double consequence) {
         if (probability < 0.0 || probability > 1.0)
@@ -24,11 +24,34 @@ public class Risk {
         calculateExposure();
     }
 
+
+
     private void calculateExposure() {
         exposure = probability * consequence;
     }
 
+
     public void attachStrategy(Strategy strategy) {
-        strategies.add(strategy);
+        attachedStrategy = strategy;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getProbability() {
+        return probability;
+    }
+
+    public double getConsequence() {
+        return consequence;
+    }
+
+    public double getExposure() {
+        return exposure;
+    }
+
+
+
+
 }

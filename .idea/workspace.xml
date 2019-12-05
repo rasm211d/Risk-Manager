@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/META-INF/Risk_Manager.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/javafx.web.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -94,6 +95,8 @@
       <workItem from="1575369519807" duration="25000" />
       <workItem from="1575459462402" duration="906000" />
       <workItem from="1575461269544" duration="1446000" />
+      <workItem from="1575531209825" duration="720000" />
+      <workItem from="1575534521014" duration="1264000" />
     </task>
     <task id="LOCAL-00001" summary="Strategy added">
       <created>1575362102647</created>
@@ -219,7 +222,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Implementering/src/Logic/Main.java</url>
           <line>29</line>
-          <properties class="Logic.Main" method="main">
+          <properties class="Logic.Main" method="changeSceneToStrategyTable">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
