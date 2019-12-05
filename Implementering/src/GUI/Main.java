@@ -5,6 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -57,19 +60,13 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    /** Method for changing scenes*/
-    public void changeSceneToAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception {
-
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
-
-        // Only creates a new scene if it doesn't already exist
-        if (addStrategyScene == null)
-            addStrategyScene = new Scene(root);
-
-        // This is the line that gets the stage information
-        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-
-        primaryStage.setScene(addStrategyScene);
-        primaryStage.show();
+    /** Method for popup window to add strategy*/
+    public void popupAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Add Strategy");
+            stage.setScene(new Scene(root1));
+            stage.show();
     }
 }
