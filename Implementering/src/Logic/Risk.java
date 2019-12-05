@@ -48,7 +48,7 @@ public class Risk {
     }
 
     public double getExposure() {
-        return exposure;
+        return exposure = consequence * probability;
     }
 
 
