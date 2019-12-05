@@ -5,17 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-
-import java.awt.event.ActionEvent;
 
 public class Main extends Application {
 
     private Scene startScene;
-    private Scene strategytableScene;
+    private Scene strategyTableScene;
     private Scene addStrategyScene;
 
     @Override
@@ -52,13 +47,13 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
 
         // Only creates a new scene if it doesn't already exist
-        if (strategytableScene == null)
-            strategytableScene = new Scene(root);
+        if (strategyTableScene == null)
+            strategyTableScene = new Scene(root);
 
         // This is the line that gets the stage information
         Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
 
-        primaryStage.setScene(strategytableScene);
+        primaryStage.setScene(strategyTableScene);
         primaryStage.show();
     }
 
