@@ -9,6 +9,21 @@ import java.sql.SQLException;
 
 public class DBRisk {
 
+    public static Risk getById(int id) {
+
+        String sql = "SELECT * FROM risk WHERE id = ?";
+
+        try (Connection conn = Connect.connect();
+            PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            // TODO Create risk get using constructor
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
     public static void insert(Risk risk) {
 
         String sql = "INSERT INTO risk(description, probability, consequence) VALUES(?,?,?,?)";
