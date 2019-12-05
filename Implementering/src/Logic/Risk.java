@@ -7,8 +7,15 @@ public class Risk {
     private String description = "";
     private double probability = 0.0;
     private double consequence = 0.0;
-    private double exposure = 0.0;
     private Strategy attachedStrategy;
+
+    public Risk(int id, String description, double probability, double consequence, double exposure, Strategy attachedStrategy) {
+        this.id = id;
+        this.description = description;
+        this.probability = probability;
+        this.consequence = consequence;
+        this.attachedStrategy = attachedStrategy;
+    }
 
     public void specifyRisk(String description, double probability, double consequence) {
         if (probability < 0.0 || probability > 1.0)
@@ -27,8 +34,8 @@ public class Risk {
 
 
 
-    private void calculateExposure() {
-        exposure = probability * consequence;
+    private double calculateExposure() {
+        return probability * consequence;
     }
 
 
@@ -62,14 +69,6 @@ public class Risk {
 
     public void setConsequence(double consequence) {
         this.consequence = consequence;
-    }
-
-    public double getExposure() {
-        return exposure = consequence * probability;
-    }
-
-    public void setExposure(double exposure) {
-        this.exposure = exposure;
     }
 
     public Strategy getAttachedStrategy () {
