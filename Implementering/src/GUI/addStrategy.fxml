@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Main">
    <children>
       <Pane prefHeight="51.0" prefWidth="400.0">
          <children>
@@ -28,7 +28,7 @@
             <TextField layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="276.0" />
             <TextField layoutX="110.0" layoutY="80.0" prefHeight="17.0" prefWidth="276.0" />
             <Button layoutX="334.0" layoutY="205.0" mnemonicParsing="false" text="Tilbage" />
-            <Button layoutX="250.0" layoutY="205.0" mnemonicParsing="false" text="Ok boomer" />
+            <Button fx:id="saveStrategyButton" layoutX="250.0" layoutY="205.0" mnemonicParsing="false" onAction="#exitPopup" text="Ok boomer" />
          </children>
       </Pane>
    </children>

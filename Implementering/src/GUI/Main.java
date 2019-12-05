@@ -14,7 +14,7 @@ public class Main extends Application {
 
     private Scene startScene;
     private Scene strategyTableScene;
-    private Scene addStrategyScene;
+    Stage stage = new Stage();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -64,9 +64,14 @@ public class Main extends Application {
     public void popupAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception{
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
+
             stage.setTitle("Add Strategy");
             stage.setScene(new Scene(root1));
             stage.show();
+    }
+
+    /** Method for closing popup window */
+    public void exitPopup(javafx.event.ActionEvent actionEvent) throws Exception {
+        stage.close();
     }
 }
