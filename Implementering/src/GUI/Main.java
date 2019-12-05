@@ -51,8 +51,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/start.fxml"));
 
         // Only creates a new scene if it doesn't already exist
-        if (strategytableScene == null)
-            strategytableScene = new Scene(root);
+        if (startScene == null)
+            startScene = new Scene(root);
 
         // This is the line that gets the stage information
         Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
