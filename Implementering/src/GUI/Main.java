@@ -5,16 +5,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.stage.Popup;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+
+import java.awt.event.ActionEvent;
 
 public class Main extends Application {
 
-    private Scene startScene;
-    private Scene strategyTableScene;
-    private Scene addStrategyScene;
+    private Scene strategytableScene;
+    private Scene risktableScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -29,13 +30,25 @@ public class Main extends Application {
     }
 
     /** Method for changing scenes*/
+    public void changeSceneToStrategyTable(javafx.event.ActionEvent actionEvent) throws Exception {
+
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
+
+        if (strategytableScene == null)
+            strategytableScene = new Scene(root);
+
+        // This is the line that gets the stage information
+        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+
+        primaryStage.setScene(strategytableScene);
+        primaryStage.show();
+    }
+
+    /** Method for changing scenes*/
     public void changeSceneToStart(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/start.fxml"));
-
-        // Only creates a new scene if it doesn't already exist
-        if (startScene == null)
-            startScene = new Scene(root);
+        Scene startScene = new Scene(root);
 
         // This is the line that gets the stage information
         Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -45,28 +58,17 @@ public class Main extends Application {
     }
 
     /** Method for changing scenes*/
-    public void changeSceneToStrategyTable(javafx.event.ActionEvent actionEvent) throws Exception {
+    public void changeSceneToRiskTable(javafx.event.ActionEvent actionEvent) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/risktable.fxml"));
 
-        // Only creates a new scene if it doesn't already exist
-        if (strategyTableScene == null)
-            strategyTableScene = new Scene(root);
+        if (risktableScene == null)
+            risktableScene = new Scene(root);
 
         // This is the line that gets the stage information
         Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
 
-        primaryStage.setScene(strategyTableScene);
+        primaryStage.setScene(risktableScene);
         primaryStage.show();
-    }
-
-    /** Method for popup window to add strategy*/
-    public void popupAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Add Strategy");
-            stage.setScene(new Scene(root1));
-            stage.show();
     }
 }
