@@ -2,14 +2,34 @@ package DBAccess;
 
 import Logic.Risk;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBRisk {
 
+    private static void createTable() {
+
+        String sql = "CREATE TABLE IF NOT EXISTS risk (\n" +
+                "id integer PRIMARY KEY AUTOINCREMENT, \n" +
+                "description text NOT NULL, \n" +
+                "probability real NOT NULL, \n" +
+                "consequence real NOT NULL, \n" +
+                "attachStrategy integer, \n" +
+                "FOREIGN KEY(attachStrategy) REFERENCES strategy(id)";
+
+        try (Connection conn = Connect.connect();
+             Statement st = conn.createStatement()) {
+
+            st.execute(sql);
+
+        } catch (SQLException e) {
+            e.getMessage();
+        }
+
+    }
+
     public static Risk getById(int id) {
+
+        createTable();
 
         Risk risk = null;
 
@@ -46,6 +66,8 @@ public class DBRisk {
 
     public static void insert(Risk risk) {
 
+        createTable();
+
         String sql = "INSERT INTO risk(description, probability, consequence) VALUES(?,?,?,?)";
 
         try (Connection conn = Connect.connect();
@@ -62,6 +84,8 @@ public class DBRisk {
     }
 
     public static void update(Risk risk) {
+
+        createTable();
 
         String sql = "UPDATE risk SET description = ? , " +
                 "probability = ? , " +
@@ -86,6 +110,8 @@ public class DBRisk {
     }
 
     public static void delete(Risk risk) {
+
+        createTable();
 
         String sql = "DELETE FROM risk WHERE id = ?";
 
