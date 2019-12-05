@@ -5,22 +5,38 @@ import Logic.Strategy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBRisk {
 
     public static Risk getById(int id) {
 
+        Risk risk = null;
+
         String sql = "SELECT * FROM risk WHERE id = ?";
 
         try (Connection conn = Connect.connect();
             PreparedStatement ps = conn.prepareStatement(sql)) {
 
-            // TODO Create risk get using constructor
+            ps.setInt(1, id);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                risk = new Risk(
+                        rs.getInt("id"),
+                        rs.getString("description"),
+                        rs.getDouble("probability"),
+                        rs.getDouble("consequence")
+                );
+            }
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
+
+        return risk;
 
     }
 
