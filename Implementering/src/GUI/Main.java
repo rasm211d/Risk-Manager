@@ -14,6 +14,7 @@ import java.awt.event.ActionEvent;
 
 public class Main extends Application {
 
+    private Scene startScene;
     private Scene strategytableScene;
 
     @Override
@@ -33,6 +34,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
 
+        // Only creates a new scene if it doesn't already exist
         if (strategytableScene == null)
             strategytableScene = new Scene(root);
 
@@ -47,7 +49,10 @@ public class Main extends Application {
     public void changeSceneToStart(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/start.fxml"));
-        Scene startScene = new Scene(root);
+
+        // Only creates a new scene if it doesn't already exist
+        if (strategytableScene == null)
+            strategytableScene = new Scene(root);
 
         // This is the line that gets the stage information
         Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
