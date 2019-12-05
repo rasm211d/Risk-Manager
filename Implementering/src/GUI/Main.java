@@ -9,9 +9,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 import static java.lang.Double.parseDouble;
