@@ -20,7 +20,6 @@ public class Risk {
         this.description = description;
         this.probability = probability;
         this.consequence = consequence;
-        this.attachedStrategy = attachedStrategy;
     }
 
     public void specifyRisk(String description, double probability, double consequence) {
