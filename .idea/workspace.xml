@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +219,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Implementering/src/Logic/Main.java</url>
           <line>29</line>
-          <properties class="Logic.Main" method="main">
+          <properties class="Logic.Main">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
