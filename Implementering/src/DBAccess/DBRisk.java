@@ -30,6 +30,9 @@ public class DBRisk {
                         rs.getDouble("probability"),
                         rs.getDouble("consequence")
                 );
+
+                // TODO: get strategy from db attachedStrategy id and update local risk object
+
             }
 
         } catch (SQLException e) {
