@@ -33,7 +33,9 @@ public class Main extends Application {
         launch(args);
     }
 
-    /** Method for changing scenes*/
+    /**
+     * Method for changing scenes
+     */
     public void changeSceneToStart(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/start.fxml"));
@@ -43,13 +45,15 @@ public class Main extends Application {
             startScene = new Scene(root);
 
         // This is the line that gets the stage information
-        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage primaryStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         primaryStage.setScene(startScene);
         primaryStage.show();
     }
 
-    /** Method for changing scenes*/
+    /**
+     * Method for changing scenes
+     */
     public void changeSceneToStrategyTable(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
@@ -59,13 +63,15 @@ public class Main extends Application {
             strategyTableScene = new Scene(root);
 
         // This is the line that gets the stage information
-        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage primaryStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         primaryStage.setScene(strategyTableScene);
         primaryStage.show();
     }
 
-    /** Method for changing scenes*/
+    /**
+     * Method for changing scenes
+     */
     public void changeSceneToRiskTable(javafx.event.ActionEvent actionEvent) throws Exception {
 
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/risktable.fxml"));
@@ -75,27 +81,47 @@ public class Main extends Application {
             riskTableScene = new Scene(root);
 
         // This is the line that gets the stage information
-        Stage primaryStage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        Stage primaryStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
 
         primaryStage.setScene(riskTableScene);
         primaryStage.show();
     }
 
-    /** Method for popup window to add strategy*/
-    public void popupAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
+    /**
+     * Method for popup window to add strategy
+     */
+    public void popupAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
 
-            stage.setTitle("Add Strategy");
-            stage.setScene(new Scene(root1));
-            stage.show();
+        stage.setTitle("Add Strategy");
+        stage.setScene(new Scene(root1));
+        stage.show();
     }
 
-    /** Method for closing the popup window */
-    public void exitPopup(){
+    /**
+     * Method for popup window to add Risk
+     */
+    public void popupAddRisk(javafx.event.ActionEvent actionEvent) throws Exception {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("GUI/addRisk.fxml"));
+        Parent root1 = (Parent) fxmlLoader.load();
+
+        stage.setTitle("Add Risk");
+        stage.setScene(new Scene(root1));
+        stage.show();
+    }
+
+    /**
+     * Method for closing the popup window
+     */
+    public void exitPopup() {
         // get a handle to the stage
         Stage stage = (Stage) saveStrategyButton.getScene().getWindow();
         // do what you have to do
         stage.close();
+
+
     }
+
+
 }
