@@ -27,8 +27,7 @@
             <TextField layoutX="110.0" layoutY="10.0" prefHeight="25.0" prefWidth="276.0" />
             <TextField layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="276.0" />
             <TextField layoutX="110.0" layoutY="80.0" prefHeight="17.0" prefWidth="276.0" />
-            <Button layoutX="334.0" layoutY="205.0" mnemonicParsing="false" text="Tilbage" />
-            <Button fx:id="saveButton" layoutX="250.0" layoutY="205.0" mnemonicParsing="false" onAction="#closePopup" text="Ok boomer" />
+            <Button fx:id="saveButton" layoutX="353.0" layoutY="211.0" mnemonicParsing="false" onAction="#closePopup" text="OK" />
          </children>
       </Pane>
    </children>
