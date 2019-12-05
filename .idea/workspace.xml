@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Implementering/src/GUI/addStrategy.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/META-INF/Risk_Manager.kotlin_module" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Implementering/src/GUI" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,10 +43,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\benky\OneDrive\IdeaProjects\Risk-Manager\Implementering\src\GUI" />
       <recent name="C:\Users\emiln\IdeaProjects\Risk-Manager\lib" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\emiln\IdeaProjects\Risk-Manager\lib" />
     </key>
   </component>
@@ -64,8 +64,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="RiskManagerController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Logic.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
       <module name="Risk_Manager" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,7 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RiskManagerController" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -95,8 +95,7 @@
       <workItem from="1575369519807" duration="25000" />
       <workItem from="1575459462402" duration="906000" />
       <workItem from="1575461269544" duration="1446000" />
-      <workItem from="1575531209825" duration="720000" />
-      <workItem from="1575534521014" duration="1264000" />
+      <workItem from="1575531222904" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="Strategy added">
       <created>1575362102647</created>
@@ -182,7 +181,42 @@
       <option name="project" value="LOCAL" />
       <updated>1575466476391</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Sceneskifte fra startskærm til strategytable tilføjet">
+      <created>1575466644888</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575466644888</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Sceneskift fra strategytable til startskærm tilføjet">
+      <created>1575467629200</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1575467629200</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Main flyttet til GUI package">
+      <created>1575533204464</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1575533204464</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Main flyttet til GUI package">
+      <created>1575534157093</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1575534157093</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Main flyttet til GUI package">
+      <created>1575534551090</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1575534551090</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,20 +248,8 @@
     <MESSAGE value="Flyttede JavaFX og SQLite libraries til en projekt-mappe og tilføjede dem til external libraries." />
     <MESSAGE value="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml" />
     <MESSAGE value="Sceneskifte fra startskærm til strategytable tilføjet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sceneskifte fra startskærm til strategytable tilføjet" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Implementering/src/Logic/Main.java</url>
-          <line>29</line>
-          <properties class="Logic.Main" method="changeSceneToStrategyTable">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Sceneskift fra strategytable til startskærm tilføjet" />
+    <MESSAGE value="Main flyttet til GUI package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main flyttet til GUI package" />
   </component>
 </project>
