@@ -24,11 +24,11 @@
             <Text layoutX="20.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sandsynlighed" />
             <Text layoutX="20.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konsekvens" />
             <Text layoutX="20.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beskrivelse" />
-            <TextField layoutX="110.0" layoutY="10.0" prefHeight="25.0" prefWidth="276.0" />
-            <TextField layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="276.0" />
-            <TextField layoutX="110.0" layoutY="80.0" prefHeight="117.0" prefWidth="276.0" />
+            <TextField fx:id="probabilityField" layoutX="110.0" layoutY="10.0" prefHeight="25.0" prefWidth="276.0" />
+            <TextField fx:id="consequenceField" layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="276.0" />
+            <TextField fx:id="descriptionField" layoutX="110.0" layoutY="80.0" prefHeight="117.0" prefWidth="276.0" />
             <Button fx:id="addRiskTilbageButton" layoutX="334.0" layoutY="205.0" mnemonicParsing="false" onAction="#closePopup" text="Tilbage" />
-            <Button fx:id="saveButton" layoutX="250.0" layoutY="205.0" mnemonicParsing="false" onAction="#closePopup" text="Ok boomer" />
+            <Button fx:id="saveButton" layoutX="250.0" layoutY="205.0" mnemonicParsing="false" onAction="#addRiskSaveButton" text="Ok boomer" />
          </children>
       </Pane>
    </children>

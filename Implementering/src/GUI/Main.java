@@ -1,15 +1,20 @@
 package GUI;
 
+import DBAccess.DBRisk;
+import Logic.Risk;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
+
+import static java.lang.Double.parseDouble;
 
 public class Main extends Application {
 
@@ -20,6 +25,15 @@ public class Main extends Application {
 
     @FXML
     private javafx.scene.control.Button saveButton;
+
+    @FXML
+    private TextField descriptionField;
+
+    @FXML
+    private TextField probabilityField;
+
+    @FXML
+    private TextField consequenceField;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -109,6 +123,20 @@ public class Main extends Application {
         stage.setTitle("Add Risk");
         stage.setScene(new Scene(root1));
         stage.show();
+    }
+
+    public void addRiskSaveButton() {
+
+        String description = descriptionField.getText();
+        double probability = parseDouble(probabilityField.getText());
+        double consequence = parseDouble(consequenceField.getText());
+
+        Risk newRisk = new Risk(description, probability, consequence);
+
+        DBRisk.insert(newRisk);
+
+
+        closePopup();
     }
 
     /**

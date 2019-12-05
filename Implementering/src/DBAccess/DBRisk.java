@@ -6,6 +6,12 @@ import java.sql.*;
 
 public class DBRisk {
 
+    public static void main(String[] args) {
+
+        createTable();
+
+    }
+
     private static void createTable() {
 
         String sql = "CREATE TABLE IF NOT EXISTS risk (\n" +

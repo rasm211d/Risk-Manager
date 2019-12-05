@@ -13,9 +13,10 @@ public class Connect {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url);
+            return conn;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+            throw new RuntimeException("Connection to db failed.");
         }
-        return conn;
     }
 }
