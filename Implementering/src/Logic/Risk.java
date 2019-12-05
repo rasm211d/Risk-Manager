@@ -15,7 +15,7 @@ public class Risk {
         this.consequence = consequence;
     }
 
-    public Risk(int id, String description, double probability, double consequence, double exposure, Strategy attachedStrategy) {
+    public Risk(int id, String description, double probability, double consequence) {
         this.id = id;
         this.description = description;
         this.probability = probability;
