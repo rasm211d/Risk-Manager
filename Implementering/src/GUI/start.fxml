@@ -20,7 +20,7 @@
          <children>
             <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
                <children>
-                  <Button fx:id="riskbutton" layoutX="210.0" layoutY="32.0" mnemonicParsing="false" onAction="#changeSceneToRiskTable" text="Risici">
+                  <Button fx:id="riskbutton" layoutX="143.0" layoutY="32.0" mnemonicParsing="false" onAction="#changeSceneToRiskTable" prefHeight="138.0" prefWidth="361.0" text="Risici">
                      <font>
                         <Font size="64.0" />
                      </font>
