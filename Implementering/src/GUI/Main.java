@@ -65,7 +65,7 @@ public class Main extends Application {
     /** Method for changing scenes*/
     public void changeSceneToAddStrategy(javafx.event.ActionEvent actionEvent) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/strategytable.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/addStrategy.fxml"));
 
         // Only creates a new scene if it doesn't already exist
         if (addStrategyScene == null)
