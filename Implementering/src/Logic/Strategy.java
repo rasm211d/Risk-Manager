@@ -7,6 +7,19 @@ public class Strategy {
     private double cost = 0.0;
     private String responsibility = "";
 
+    public Strategy(String description, double cost, String responsibility) {
+        this.description = description;
+        this.cost = cost;
+        this.responsibility = responsibility;
+    }
+
+    public Strategy(int id, String description, double cost, String responsibility) {
+        this.id = id;
+        this.description = description;
+        this.cost = cost;
+        this.responsibility = responsibility;
+    }
+
     public void specifyStrategy(String description, double cost, String responsibility) {
 
         this.description = description;
