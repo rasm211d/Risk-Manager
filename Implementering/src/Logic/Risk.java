@@ -3,6 +3,7 @@ package Logic;
 import java.util.ArrayList;
 
 public class Risk {
+    private int id;
     private String description = "";
     private double probability = 0.0;
     private double consequence = 0.0;
@@ -35,6 +36,10 @@ public class Risk {
         attachedStrategy = strategy;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -48,7 +53,7 @@ public class Risk {
     }
 
     public double getExposure() {
-        return exposure;
+        return exposure = consequence * probability;
     }
 
 
