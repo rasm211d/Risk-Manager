@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="Tilføjet">
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="Popup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/DBStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/strategytable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/strategytable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Risk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Risk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/RiskManagerController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +28,7 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1USqGfdH7Nz7vPmkdPSYpQZMlfh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -62,8 +67,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="GUI.Main" />
       <module name="Risk_Manager" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,6 +319,8 @@
     <MESSAGE value="Tilføjet constructor til Risk klassen.&#10;Fjernet exposure field og opdateret til altid at udregne exposure når man henter det." />
     <MESSAGE value="Tilføjet overload constructor uden id og attachedStrategy." />
     <MESSAGE value="Fjernet attachedStrategy fra den største constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fjernet attachedStrategy fra den største constructor" />
+    <MESSAGE value="Tilføjet AddRisk Saveknap" />
+    <MESSAGE value="Saveknap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saveknap" />
   </component>
 </project>

@@ -19,7 +19,7 @@ public class Main extends Application {
     Stage stage = new Stage();
 
     @FXML
-    private javafx.scene.control.Button saveStrategyButton;
+    private javafx.scene.control.Button saveButton;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -114,9 +114,9 @@ public class Main extends Application {
     /**
      * Method for closing the popup window
      */
-    public void exitPopup() {
+    public void closePopup() {
         // get a handle to the stage
-        Stage stage = (Stage) saveStrategyButton.getScene().getWindow();
+        Stage stage = (Stage) saveButton.getScene().getWindow();
         // do what you have to do
         stage.close();
 
