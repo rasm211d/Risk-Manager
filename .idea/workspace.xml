@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/GUI/start.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,19 +211,5 @@
     <MESSAGE value="Ny startskærm start.fxml&#10;sample.fxml renamed til strategytable.fxml" />
     <MESSAGE value="Sceneskifte fra startskærm til strategytable tilføjet" />
     <option name="LAST_COMMIT_MESSAGE" value="Sceneskifte fra startskærm til strategytable tilføjet" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Implementering/src/Logic/Main.java</url>
-          <line>29</line>
-          <properties class="Logic.Main" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
