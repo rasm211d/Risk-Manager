@@ -16,9 +16,9 @@ public class DBRisk {
              PreparedStatement ps = conn.prepareStatement(sql)) {
 
             ps.setString(1, risk.getDescription());
-            ps.setFloat(2, risk.getProbability());
-            ps.setFloat(3, risk.getConsequence());
-            ps.setFloat(4, risk.getExposure());
+            ps.setDouble(2, risk.getProbability());
+            ps.setDouble(3, risk.getConsequence());
+            ps.setDouble(4, risk.getExposure());
             ps.executeUpdate();
 
         } catch (SQLException e) {
