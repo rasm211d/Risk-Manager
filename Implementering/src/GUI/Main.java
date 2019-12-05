@@ -6,9 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -119,9 +116,5 @@ public class Main extends Application {
         Stage stage = (Stage) saveButton.getScene().getWindow();
         // do what you have to do
         stage.close();
-
-
     }
-
-
 }
