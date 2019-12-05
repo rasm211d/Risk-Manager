@@ -1,6 +1,7 @@
 package GUI;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -16,6 +17,9 @@ public class Main extends Application {
     private Scene strategyTableScene;
     private Scene riskTableScene;
     Stage stage = new Stage();
+
+    @FXML
+    private javafx.scene.control.Button saveStrategyButton;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -87,9 +91,11 @@ public class Main extends Application {
             stage.show();
     }
 
-    /** Method for closing popup window */
-    public void exitPopup(javafx.event.ActionEvent actionEvent) throws Exception {
-        System.out.println("closing popup");
+    /** Method for closing the popup window */
+    public void exitPopup(){
+        // get a handle to the stage
+        Stage stage = (Stage) saveStrategyButton.getScene().getWindow();
+        // do what you have to do
         stage.close();
     }
 }
