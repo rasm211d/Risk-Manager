@@ -14,7 +14,8 @@ public class DBRisk {
                 "probability real NOT NULL, \n" +
                 "consequence real NOT NULL, \n" +
                 "attachStrategy integer, \n" +
-                "FOREIGN KEY(attachStrategy) REFERENCES strategy(id)";
+                "FOREIGN KEY(attachStrategy) REFERENCES strategy(id)" +
+                ");";
 
         try (Connection conn = Connect.connect();
              Statement st = conn.createStatement()) {
@@ -68,7 +69,7 @@ public class DBRisk {
 
         createTable();
 
-        String sql = "INSERT INTO risk(description, probability, consequence) VALUES(?,?,?,?)";
+        String sql = "INSERT INTO risk(description, probability, consequence) VALUES(?,?,?)";
 
         try (Connection conn = Connect.connect();
              PreparedStatement ps = conn.prepareStatement(sql)) {
