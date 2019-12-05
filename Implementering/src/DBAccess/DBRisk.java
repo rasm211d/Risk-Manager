@@ -1,7 +1,6 @@
 package DBAccess;
 
 import Logic.Risk;
-import Logic.Strategy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -30,6 +29,11 @@ public class DBRisk {
                         rs.getDouble("probability"),
                         rs.getDouble("consequence")
                 );
+
+                if (rs.getInt("attachedStrategy") != 0) {
+                    risk.setAttachedStrategy(DBStrategy.getById(rs.getInt("id")));
+                }
+
             }
 
         } catch (SQLException e) {
