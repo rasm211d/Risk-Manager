@@ -1,7 +1,6 @@
 package DBAccess;
 
 import Logic.Risk;
-import Logic.Strategy;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -31,7 +30,9 @@ public class DBRisk {
                         rs.getDouble("consequence")
                 );
 
-                // TODO: get strategy from db attachedStrategy id and update local risk object
+                if (rs.getInt("attachedStrategy") != 0) {
+                    risk.setAttachedStrategy(DBStrategy.getById(rs.getInt("id")));
+                }
 
             }
 

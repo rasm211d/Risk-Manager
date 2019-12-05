@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="Tilføjet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBRisk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/Logic/Risk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/DBStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBStrategy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +22,6 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="62fcdb8e-621f-4a07-8bd3-0eef49012701" />
   </component>
   <component name="ProjectId" id="1USqGfdH7Nz7vPmkdPSYpQZMlfh" />
   <component name="PropertiesComponent">
