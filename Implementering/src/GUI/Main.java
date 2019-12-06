@@ -1,15 +1,24 @@
 package GUI;
 
 import DBAccess.DBRisk;
+import DBAccess.Connect;
+import DBAccess.DBStrategy;
 import Logic.Risk;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+
+import java.sql.*;
 
 import static java.lang.Double.parseDouble;
 
@@ -31,6 +40,27 @@ public class Main extends Application {
 
     @FXML
     private TextField consequenceField;
+
+    @FXML
+    private javafx.scene.control.TableView<Risk> TableView;
+
+    @FXML
+    private TableColumn<Risk, Integer> idColumn;
+
+    @FXML
+    private TableColumn<Risk, Double> probabilityColumn;
+
+    @FXML
+    private TableColumn<Risk, Double> consequenceColumn;
+
+    @FXML
+    private TableColumn<Risk, Double> exposureColumn;
+
+    @FXML
+    private TableColumn<Risk, String> descriptionColumn;
+
+    @FXML
+    private TableColumn<Risk, Integer> attachedStrategy;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -96,6 +126,8 @@ public class Main extends Application {
 
         primaryStage.setScene(riskTableScene);
         primaryStage.show();
+
+//        showRisks();
     }
 
     /**
@@ -132,7 +164,6 @@ public class Main extends Application {
 
         DBRisk.insert(newRisk);
 
-
         closePopup();
     }
 
@@ -144,9 +175,56 @@ public class Main extends Application {
         Stage stage = (Stage) saveButton.getScene().getWindow();
         // do what you have to do
         stage.close();
-
-
     }
 
+//    public ObservableList<Risk> getRisksList() {
+//        ObservableList<Risk> riskList = FXCollections.observableArrayList();
+//
+//        DBRisk dbRisk = new DBRisk();
+//        dbRisk.createTable();
+//
+//        Risk risk = null;
+//
+//        String sql = "SELECT * FROM risk";
+//
+//        try (Connection conn = Connect.connect();
+//             PreparedStatement ps = conn.prepareStatement(sql)) {
+//
+//            ResultSet rs = ps.executeQuery();
+//
+//            while (rs.next()) {
+//                risk = new Risk(
+//                        rs.getInt("id"),
+//                        rs.getString("description"),
+//                        rs.getDouble("probability"),
+//                        rs.getDouble("consequence"));
+//                riskList.add(risk);
+//
+//
+//
+////                if (rs.getInt("attachedStrategy") != 0) {
+////                    risk.setAttachedStrategy(DBStrategy.getById(rs.getInt("id")));
+////                }
+//
+//            }
+//
+//        } catch (SQLException e) {
+//            System.out.println(e.getMessage());
+//        }
+//        return riskList;
+//    }
+
+//    public void showRisks() {
+//        ObservableList<Risk> list = getRisksList();
+//
+//        idColumn.setCellValueFactory(new PropertyValueFactory<Risk,Integer>("id"));
+//        probabilityColumn.setCellValueFactory(new PropertyValueFactory<Risk,Double>("sandsynlighed"));
+//        consequenceColumn.setCellValueFactory(new PropertyValueFactory<Risk,Double>("konsekvens"));
+//        exposureColumn.setCellValueFactory(new PropertyValueFactory<Risk,Double>("prioritet"));
+//        descriptionColumn.setCellValueFactory(new PropertyValueFactory<Risk,String>("beskrivelse"));
+//        attachedStrategy.setCellValueFactory(new PropertyValueFactory<Risk,Integer>("strategi"));
+//
+//        TableView.setItems(list);
+//    }
 
 }
