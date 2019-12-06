@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="Popup">
+    <list default="true" id="eec53d1d-5832-4480-809d-0592acfac4c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementering/src/DBAccess/DBStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementering/src/DBAccess/DBStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/Connect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/Connect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/DBStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/DBAccess/DBStrategy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/addRisk.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/addRisk.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/addStrategy.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/addStrategy.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/risktable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/risktable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/start.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/start.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/strategytable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/GUI/strategytable.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Risk.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Risk.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/RiskManagerController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Risk_Manager/Logic/Strategy.class" afterDir="false" />
@@ -14,6 +24,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,16 +54,17 @@
   <component name="ProjectId" id="1USqGfdH7Nz7vPmkdPSYpQZMlfh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Implementering/src/GUI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -101,6 +126,7 @@
       <workItem from="1575459462402" duration="906000" />
       <workItem from="1575461269544" duration="1446000" />
       <workItem from="1575531222904" duration="3788000" />
+      <workItem from="1575617099199" duration="491000" />
     </task>
     <task id="LOCAL-00001" summary="Strategy added">
       <created>1575362102647</created>
