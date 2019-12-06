@@ -9,6 +9,8 @@ public class Risk {
     private double consequence = 0.0;
     private Strategy attachedStrategy;
 
+    public Risk(){}
+
     public Risk(String description, double probability, double consequence) {
         this.description = description;
         this.probability = probability;

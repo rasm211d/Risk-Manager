@@ -17,8 +17,13 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import org.sqlite.SQLiteConfig;
 
+import java.net.URL;
 import java.sql.*;
+import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static java.lang.Double.parseDouble;
 
@@ -31,6 +36,9 @@ public class Main extends Application {
 
     @FXML
     private javafx.scene.control.Button saveButton;
+
+    @FXML
+    private TableView riskTable;
 
     @FXML
     private TextField descriptionField;
@@ -226,5 +234,4 @@ public class Main extends Application {
 //
 //        TableView.setItems(list);
 //    }
-
 }
