@@ -8,8 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Main">
    <children>
       <Pane prefHeight="51.0" prefWidth="400.0">
          <children>
@@ -25,11 +24,10 @@
             <Text layoutX="20.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sandsynlighed" />
             <Text layoutX="20.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konsekvens" />
             <Text layoutX="20.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beskrivelse" />
-            <TextField layoutX="110.0" layoutY="10.0" prefHeight="25.0" prefWidth="276.0" />
-            <TextField layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="276.0" />
-            <TextField layoutX="110.0" layoutY="80.0" prefHeight="117.0" prefWidth="276.0" />
-            <Button layoutX="334.0" layoutY="205.0" mnemonicParsing="false" text="Tilbage" />
-            <Button layoutX="250.0" layoutY="205.0" mnemonicParsing="false" text="Ok boomer" />
+            <TextField fx:id="probabilityField" layoutX="110.0" layoutY="10.0" prefHeight="25.0" prefWidth="276.0" />
+            <TextField fx:id="consequenceField" layoutX="110.0" layoutY="45.0" prefHeight="25.0" prefWidth="276.0" />
+            <TextField fx:id="descriptionField" layoutX="110.0" layoutY="80.0" prefHeight="117.0" prefWidth="276.0" />
+            <Button fx:id="saveButton" layoutX="353.0" layoutY="205.0" mnemonicParsing="false" onAction="#addRiskSaveButton" text="OK" />
          </children>
       </Pane>
    </children>

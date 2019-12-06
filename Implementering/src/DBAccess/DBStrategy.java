@@ -2,12 +2,32 @@ package DBAccess;
 
 import Logic.Strategy;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBStrategy {
+
+    public static void main(String[] args) {
+        createTable();
+    }
+
+    private static void createTable() {
+        String sql = "CREATE TABLE IF NOT EXISTS strategy (\n" +
+                "id integer PRIMARY KEY AUTOINCREMENT, \n" +
+                "description text NOT NULL, \n" +
+                "cost real NOT NULL, \n" +
+                "responsibility text NOT NULL, \n" +
+                ");";
+
+        try (Connection conn = Connect.connect();
+            Statement st = conn.createStatement()) {
+
+            st.execute(sql);
+
+        }catch (SQLException e) {
+            e.getMessage();
+        }
+
+    }
 
     public static Strategy getById(int id) {
         Strategy strategy = null;
@@ -34,6 +54,7 @@ public class DBStrategy {
         }
         return strategy;
     }
+
 
     public static void insert (Strategy strategy) {
 
