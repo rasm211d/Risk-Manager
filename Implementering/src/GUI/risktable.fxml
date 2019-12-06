@@ -21,7 +21,7 @@
             <Button fx:id="addRiskButton" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#popupAddRisk" text="Tilføj" />
             <Button fx:id="RiskBackButton" layoutX="140.0" layoutY="81.0" mnemonicParsing="false" onAction="#changeSceneToStart" text="Tilbage" />
             <Button layoutX="74.0" layoutY="81.0" mnemonicParsing="false" text="Sorter" />
-            <TableView layoutY="194.0" prefHeight="180.0" prefWidth="625.0">
+            <TableView layoutY="194.0" prefHeight="206.0" prefWidth="626.0">
               <columns>
                 <TableColumn minWidth="40.0" prefWidth="23.199982464313507" text="Risiko" />
                 <TableColumn prefWidth="94.40002059936523" text="Sandsynlighed" />
@@ -32,7 +32,7 @@
                   <TableColumn prefWidth="52.79996337890623" text="Slet" />
               </columns>
             </TableView>
-            <ScrollBar layoutX="623.0" orientation="VERTICAL" prefHeight="374.0" prefWidth="17.0" />
+            <ScrollBar layoutX="623.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="18.0" />
          </children>
       </AnchorPane>
    </children>
