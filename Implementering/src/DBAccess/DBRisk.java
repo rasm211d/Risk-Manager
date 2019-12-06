@@ -12,7 +12,7 @@ public class DBRisk {
 
     }
 
-    private static void createTable() {
+    public static void createTable() {
 
         String sql = "CREATE TABLE IF NOT EXISTS risk (\n" +
                 "id integer PRIMARY KEY AUTOINCREMENT, \n" +

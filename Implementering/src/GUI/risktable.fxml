@@ -30,13 +30,13 @@
             <Button layoutX="74.0" layoutY="81.0" mnemonicParsing="false" text="Sorter" />
             <TableView layoutY="140.0" prefHeight="260.0" prefWidth="626.0">
               <columns>
-                <TableColumn minWidth="40.0" prefWidth="23.199982464313507" text="Risiko" />
-                <TableColumn prefWidth="94.40002059936523" text="Sandsynlighed" />
-                  <TableColumn prefWidth="77.60000610351562" text="Konsekvens" />
-                  <TableColumn prefWidth="61.59999084472656" text="Prioritet" />
-                  <TableColumn prefWidth="148.800048828125" text="Revideret sandsynlighed" />
-                  <TableColumn prefWidth="144.79998779296875" text="Revideret Konsekvens" />
-                  <TableColumn prefWidth="52.79996337890623" text="Slet" />
+                <TableColumn fx:id="idColumn" minWidth="40.0" prefWidth="23.199982464313507" text="ID" />
+                <TableColumn fx:id="probabilityColumn" prefWidth="94.40002059936523" text="Sandsynlighed" />
+                  <TableColumn fx:id="ConsequenceColumn" prefWidth="77.60000610351562" text="Konsekvens" />
+                  <TableColumn fx:id="exposureColumn" prefWidth="61.59999084472656" text="Prioritet" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="148.800048828125" text="Beskrivelse" />
+                  <TableColumn fx:id="attachedStrategy" prefWidth="144.79998779296875" text="Strategi" />
+                  <TableColumn prefWidth="52.79996337890623" />
               </columns>
             </TableView>
             <ScrollBar layoutX="623.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="18.0" />
