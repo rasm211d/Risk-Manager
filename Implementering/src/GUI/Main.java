@@ -11,10 +11,11 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.awt.*;
+
 import static java.lang.Double.parseDouble;
 
 public class Main extends Application {
-
     private Scene startScene;
     private Scene strategyTableScene;
     private Scene riskTableScene;
