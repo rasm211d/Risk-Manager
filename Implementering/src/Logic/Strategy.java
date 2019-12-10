@@ -7,6 +7,8 @@ public class Strategy {
     private double cost = 0.0;
     private String responsibility = "";
 
+    public Strategy(){}
+
     public Strategy(String description, double cost, String responsibility) {
         this.description = description;
         this.cost = cost;

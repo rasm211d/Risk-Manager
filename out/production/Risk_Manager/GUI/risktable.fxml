@@ -5,14 +5,21 @@
 <?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Main">
    <children>
-      <AnchorPane minWidth="700.0" prefHeight="142.0" prefWidth="700.0">
+      <AnchorPane minWidth="647.0" prefHeight="401.0" prefWidth="647.0">
          <children>
+            <ImageView fitHeight="400.0" fitWidth="626.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="http://www.allwhitebackground.com/images/5/Blue-Abstract-Background-HD-Photos.jpg" />
+               </image>
+            </ImageView>
             <Label layoutX="14.0" layoutY="14.0" text="Risk">
                <font>
                   <Font size="30.0" />
@@ -21,18 +28,18 @@
             <Button fx:id="addRiskButton" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#popupAddRisk" text="Tilføj" />
             <Button fx:id="RiskBackButton" layoutX="140.0" layoutY="81.0" mnemonicParsing="false" onAction="#changeSceneToStart" text="Tilbage" />
             <Button layoutX="74.0" layoutY="81.0" mnemonicParsing="false" text="Sorter" />
-            <TableView layoutY="194.0" prefHeight="180.0" prefWidth="625.0">
+            <TableView layoutY="140.0" prefHeight="260.0" prefWidth="626.0">
               <columns>
-                <TableColumn minWidth="40.0" prefWidth="23.199982464313507" text="Risiko" />
-                <TableColumn prefWidth="94.40002059936523" text="Sandsynlighed" />
-                  <TableColumn prefWidth="77.60000610351562" text="Konsekvens" />
-                  <TableColumn prefWidth="61.59999084472656" text="Prioritet" />
-                  <TableColumn prefWidth="148.800048828125" text="Revideret sandsynlighed" />
-                  <TableColumn prefWidth="144.79998779296875" text="Revideret Konsekvens" />
-                  <TableColumn prefWidth="52.79996337890623" text="Slet" />
+                <TableColumn fx:id="idColumn" minWidth="40.0" prefWidth="23.199982464313507" text="ID" />
+                <TableColumn fx:id="probabilityColumn" prefWidth="94.40002059936523" text="Sandsynlighed" />
+                  <TableColumn fx:id="ConsequenceColumn" prefWidth="77.60000610351562" text="Konsekvens" />
+                  <TableColumn fx:id="exposureColumn" prefWidth="61.59999084472656" text="Prioritet" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="148.800048828125" text="Beskrivelse" />
+                  <TableColumn fx:id="attachedStrategy" prefWidth="144.79998779296875" text="Strategi" />
+                  <TableColumn prefWidth="52.79996337890623" />
               </columns>
             </TableView>
-            <ScrollBar layoutX="623.0" orientation="VERTICAL" prefHeight="374.0" prefWidth="17.0" />
+            <ScrollBar layoutX="623.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="18.0" />
          </children>
       </AnchorPane>
    </children>
